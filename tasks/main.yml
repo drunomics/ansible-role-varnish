@@ -1,0 +1,5 @@
+---
+- name: Add drupal.vcl for varnish
+  template: src=drupal.vcl.j2 dest={{ varnish_config_path }}/drupal.vcl
+  when: varnish_drupal_vcl_enable
+  notify: restart varnish
