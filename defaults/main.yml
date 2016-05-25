@@ -15,3 +15,5 @@ varnish_storage: "file,/var/lib/varnish/varnish_storage.bin,256M"
 
 varnish_drupal_vcl_enable: false
 varnish_drupal_vcl_condition: "req.backend == default"
+
+varnish_remove_ulimit: false

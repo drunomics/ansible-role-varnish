@@ -4,6 +4,7 @@
   when: varnish_drupal_vcl_enable
   notify: restart varnish
 
+
 - name: Remove ulimit from init script.
   lineinfile: dest=/etc/init.d/varnish
               line="{{ item }}"
@@ -11,3 +12,4 @@
   with_items:
     - "ulimit -n ${NFILES:-131072}"
     - "ulimit -l ${MEMLOCK:-82000}"
+  when: varnish_remove_ulimit
