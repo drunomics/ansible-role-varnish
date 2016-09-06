@@ -1,4 +1,6 @@
 ---
+# Check geerlingguy's role default vars for further defaults, i.e.:
+# https://github.com/geerlingguy/ansible-role-varnish/blob/master/defaults/main.yml
 varnish_drupal_vcl_enable: false
 varnish_drupal_vcl_condition: "req.backend == default"
 varnish_remove_ulimit: false
