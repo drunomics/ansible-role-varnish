@@ -1,3 +1,4 @@
 ---
 dependencies:
   - role: geerlingguy.varnish
+    varnish_default_vcl_template_path: ../../drunomics.varnish/templates/default.vcl.j2

@@ -4,3 +4,4 @@
 varnish_drupal_vcl_enable: false
 varnish_drupal_vcl_condition: "req.backend == default"
 varnish_remove_ulimit: false
+varnish_default_vcl_add_header_cache_hit: true
